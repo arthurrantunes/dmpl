@@ -1,0 +1,245 @@
+@media (max-width: 600px) {
+    /* --- Ajustes Gerais --- */
+
+ body{
+    
+    box-sizing: border-box;
+ }
+
+    /* --- Header e Navegação --- */
+    header {
+        padding: 10px 15px;
+        margin: 0;
+         /* Padding vertical e horizontal do header */
+        /* A altura total será definida pelo conteúdo + padding */
+    }
+
+    .container { /* Container principal do header */
+        flex-direction:column;    /* Manter logo e nav em linha */
+        justify-content: space-between; /* Logo à esquerda, menu à direita */
+        align-items: center;
+        width: 100%;
+        ;
+    }
+
+    .logo {
+        font-size: 30px; /* Tamanho do logo principal */
+        margin-bottom: 5px; /* Se estiver na mesma linha, não precisa de margem inferior */
+        white-space: nowrap; /* Evitar que "DMPL" quebre linha se o span ficar muito pequeno */
+    }
+
+    .logo span {
+        font-size: 15px; 
+    }
+
+    /* Se você tiver uma tag <nav> envolvendo o <ul> do menu: */
+
+
+    nav ul.menu {
+        flex-direction: row; /* Menu em linha */
+        gap: 10px;           /* Espaçamento entre itens do menu. Ajuste conforme necessário. */
+        /* Se houver muitos itens, eles podem não caber. */
+        /* Nesse caso, um menu "hambúrguer" seria a melhor solução. */
+    }
+
+    nav ul.menu li a {
+        font-size: 17px;      /* Fonte menor para itens do menu */
+        padding: 8px 1px;     /* Padding menor para economizar espaço */
+        white-space: nowrap;  /* Evitar quebra de linha nos itens do menu */
+    }
+
+    /* --- Seção Hero (Vídeo e Título) --- */
+    .imagem_fundo {
+ 
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centralizar verticalmente o conteúdo do hero */
+        align-items: center;
+        text-align: center; /* Centralizar texto */
+    }
+
+    .imagem_fundo video {
+        width: 100%; /* Para ocupar toda a largura da tela */
+        height: auto; /* Manter proporção */
+        max-height: 100%; /* Limitar altura máxima */
+        object-fit:cover;/* Cobrir toda a área do vídeo */
+        position: absolute; /* Para ficar atrás do conteúdo */
+        top: 0;
+        left: 0;
+        z-index: -1; /* Fica atrás do conteúdo */
+    }
+    
+
+    .titulo_fundo {
+        font-size: 30px; /* Ajustado */
+        color: white;    /* Garantir que a cor esteja definida */
+        /* text-align: center; já está no pai .imagem_fundo */
+        padding: 0 10px; /* Para não tocar as bordas da tela */
+        margin-bottom:75px; /* Espaço antes do #troca-palavra */
+    
+    }
+
+    #troca-palavra {
+        font-size: 32px; /* Ajustado */
+        color: #00aaff; /* Garantir cor */
+        /* text-align: center; já está no pai .imagem_fundo */
+        display: block; /* Para ocupar a linha inteira e centralizar bem */
+        width: 100%;
+        min-height: 100px;
+    }
+
+
+    /* --- Seção Especialistas --- */
+    .especialistas_h1 {
+        font-size: 28px;
+    }
+
+.especialistasreveal {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  gap: 10px;
+}
+
+    .clique a {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+
+    /* --- Seção Soluções/Serviços --- */
+    .solucoes_h1 {
+        font-size: 26px;
+    }
+
+    .servicos {
+        flex-direction: column; /* Empilhar imagem e lista de serviços */
+        padding: 20px 10px;   /* Ajustar padding */
+    }
+
+    .img_fundos {
+        width: 90%;           /* Imagem ocupa mais da largura da tela */
+        max-width: 300px;     /* Limitar tamanho máximo da imagem */
+        margin-right: 0;
+        margin-bottom: 20px;  /* Espaço abaixo da imagem */
+    }
+
+    .servico_lista {
+        padding-left: 15px; /* Menos padding na lista */
+        padding-right: 15px;
+    }
+
+    .servicos_text {
+        font-size: 24px;
+    }
+
+    .servico_lista li {
+        font-size: 16px; /* Ajustar tamanho da fonte dos itens de serviço */
+    }
+
+    /* --- Seção Sobre Nós --- */
+    .sobre {
+        margin: 20px 10px; /* Menos margem lateral */
+    }
+    .sobre_nos_h1 {
+        font-size: 28px;
+        text-align: center; /* Centralizar para mobile */
+    }
+    .sobre_nos_h2{
+        text-align: justify;
+    }
+
+    .links_nos {
+        grid-template-columns: 1fr; /* Uma coluna para Missão, Visão, Valores */
+        gap: 20px;
+    }
+
+    .links_nos1 {
+        padding-left: 15px; /* Ajustar padding */
+        padding-right: 15px;
+        text-align: center;
+    }
+    .links_nos1 h3, .links_nos1 h1 { /* Supondo que você usará h3 como sugeri */
+        text-align: center;
+    }
+     .nossa_missao_h1 {
+        font-size: 22px;
+    }
+    .nossa_missao_h2 {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+    /* --- Formulário de Contato --- */
+     .contato_h1{
+        font-size: 28px;
+    }
+    .servicos_reveal { /* Classe usada no container do formulário */
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .img_fundoss { /* Imagem ao lado do formulário */
+        width: 80%;
+        max-width: 450px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #formulario {
+        padding: 5px;
+        max-width: 350px; /* Limitar largura máxima */
+    }
+
+    #formulario input,
+    #formulario textarea {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+
+    /* --- Rodapé --- */
+    .rodape-conteudo {
+        flex-direction: column; /* Empilhar conteúdo do rodapé */
+        gap: 15px;
+    }
+
+    .logo_end {
+        font-size: 28px;
+    }
+
+    .rodape-esquerda, .rodape_direita {
+        text-align: center;
+    }
+
+    /* Coloque isso no seu CSS principal ou dentro da media query, se for específico para mobile */
+
+.item .lista-itens {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px); /* Efeito sutil ao abrir */
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    font-size: 15px; /* Do seu CSS original */
+    color: white; /* Do seu CSS original */
+    padding-left: 10px; /* Ajustar conforme necessário */
+    margin-top: 5px; /* Espaço entre o título e o conteúdo */
+}
+
+.item .lista-itens.aberto {
+    max-height: 500px; /* Um valor grande o suficiente para o seu maior conteúdo */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para a seta (img dentro de .item1) */
+.item1 img {
+    transition: transform 0.4s ease-in-out;
+    margin-left: auto; /* Empurra a seta para a direita */
+    padding-left: 5px; /* Pequeno espaço entre texto e seta */
+}
+
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DMPL Contabilidade</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="query.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+ <script>
+    const palavras = [
+        "Crescimento do seu negócio",
+        "Organização financeira",
+        "Gestão de impostos",
+        "Abertura da sua empresa",
+        "Consultoria contábil"
+    ];
+
+    let index = 0;
+    function trocarTexto() {
+        const elemento = document.getElementById("troca-palavra");
+        elemento.style.opacity = 0; 
+
+        setTimeout(() => {
+            elemento.textContent = palavras[index];
+            elemento.style.opacity = 1;
+            index = (index + 1) % palavras.length;
+        }, 300);
+    }
+
+    setInterval(trocarTexto, 2000); // Troca a cada 2 segundos
+
+    window.onload = () => {
+        trocarTexto(); // Inicia a troca do texto imediatamente ao carregar
+    };
+</script>
+
+
+
+
+</head>
+<body>
+
+  <header>
+    <nav class="testecont">
+    <div class="container">
+      <div class="logo">
+        DMPL<span>CONTABILIDADE</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Tabelas</a></li>
+        </ul>
+      </nav>
+    </div>
+    </nav>
+  </header>
+
+
+
+  
+<div class="imagem_fundo">
+<h1 class="titulo_fundo">
+    DMPL Contabilidade. <br> Sua parceira estratégica
+    </h1>
+<span id="troca-palavra"></span>
+ <video autoplay loop muted playsinline class="video-container">
+    <source src="img/video.mp4" type="video/mp4">
+</video>
+
+<div class="especialistasreveal">
+    <h1 class="especialistas_h1"> Precisa de ajuda com o seu negócio, ou deseja abrir um?</h1>
+    <h2 class="especialistas_h2"></h2>
+    <span class="clique"><a href="https://api.whatsapp.com/send/?phone=5521972358299&text&type=phone_number&app_absent=0" target="_blank">Clique e fale com nossos especialistas</a></span>
+    
+  </div>
+ <div class="overlay"></div>
+  </div>
+
+  
+
+
+       
+
+<div class="backteste"> 
+    <div id="servicos" class="solucoesreveal"> </div>
+    <h1 class="solucoes_h1"> Soluções contábeis personalizadas para o sucesso do seu negócio!</h1>
+  <div  class="servicos reveal">
+      <img class="img_fundos" src="img/segundaimagem.png" alt="">
+     <ul class="servico_lista">
+      <h2 class="servicos_text">Nossos serviços incluem:</h2>
+        
+            <li class="item"> <div class="item1">Contabilidade para todos os regimes tributários <img src="img/seta (1).png" alt=""></div>
+            <ul class="lista-itens">
+              <li> Especialistas em Simples Nacional, MEI, Lucro Real e Presumido. Garantimos a melhor escolha para sua empresa</li>
+             
+            </ul></li>
+
+                  <li class="item"> <div class="item1 ">Planejamento tributário <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Criamos soluções para reduzir os impostos e a melhorar a eficiência financeira </li>
+     
+          </ul></li>
+
+                  <li class="item"> <div class="item1">Abertura e encerramento de empresa  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Facilitamos todo o processo burocrático</li>
+      
+          </ul></li>
+
+                  <li class="item"><div class="item1">Imposto de renda  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Declaramos IR de forma rápida e segura, para pessoas físicas e jurídicas</li>
+          </ul></li>
+
+                  <li class="item"> <div class="item1">Declarações diversas  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Enviamos declaraçõesobrigatórias para garantir conformidade</li>
+       
+          </ul></li>
+
+                  <li class="item"><div class="item1">Cálculos periciais  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Realizamos cálculos para questões jurídicas e contábeis</li>
+       
+          </ul></li>
+
+                  <li class="item"><div class="item1">Análise financeira  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Fornecemos análises detalhadas para decisões estratégicas</li>
+      
+          </ul></li>
+
+                  <li class="item"><div class="item1">Outros serviços contábeis  <img src="img/seta (1).png" alt=""></div>
+          <ul class="lista-itens">
+            <li>Consultorias e gestão financeira para apoiar sua empresa</li>
+     
+          </ul></li>
+    </ul>
+</div>
+</div>
+
+<div class="testeteste reveal">
+<div id="sobre"  class="sobre">
+    <div class="sobre_nos">
+        <h1 class="sobre_nos_h1">Sobre Nós</h1>
+        <h2 class="sobre_nos_h2"> Ajudamos empresa a tomar decisões estratégicas com informações contábeis claras e seguras. Com mais de 10 anos de experiência, nossa equipe oferece soluções personalizadas ao seu negócio
+        </h2>
+    </div>
+    <div class="links_nos">
+<div class="links_nos1">
+    <h1 class="nossa_missao_h1">Nossa Missão</h1>
+    <h2 class="nossa_missao_h2">Oferecer soluções contábeis personalizadas, ajudando empresários a alcançar seus objetivos com transparência e eficiência </h2>
+    <img src="img/futuro.png" alt="">
+</div>
+<div class="links_nos1">
+    <h1 class="nossa_missao_h1">Nossa Visão</h1>
+    <h2 class="nossa_missao_h2">Ser reconhecida como referência em contabilidade, oferecendo soluções inovadoras que agreguem valore aos negócios</h2>
+    <img src="img/ideia.png" alt="">
+</div>
+<div class="links_nos1">
+    <h1 class="nossa_missao_h1">Nossos Valores</h1>
+    <h2 class="nossa_missao_h2">Transparência,Comprometimento com o cliente, Inovação e Responsabilidade</h2>
+  
+         <img src="img/gestao.png" alt="">
+
+
+
+      </ul>
+    </h2>
+  
+</div>
+    </div>
+    </div>
+    </div>
+
+</div>
+<h1 class="contato_h1">Entre em contato com nossos especialistas</h1>
+
+
+<div class="servicos_reveal">
+   
+
+    
+ <img class="img_fundoss" src="img/pesssoa.jpeg" alt="">
+
+   <form id="formulario">
+      <input type="text" id="nome" placeholder="Seu nome" required><br>
+      <input type="email" id="email" placeholder="Seu e-mail" required><br>
+      <input type="tel" id="telefone" name="telefone"
+       placeholder="(99) 99999-9999"
+       required>
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea><br>
+      <button type="submit">Enviar para WhatsApp</button>
+  </form>
+      
+  
+</div>
+
+<footer class="rodape">
+
+    
+    <div class="rodape-conteudo">
+        <div class="logo_end">
+            DMPL<span>CONTABILIDADE</span>
+          </div>
+      <div class="rodape-esquerda">
+        <p>&copy; 2025 DPML Contabilidade. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+     
+      </div>
+  
+      <div class="rodape_direita">
+   
+        <a href="https://wa.me/5521986059191" target="_blank"> <img src="img/whatsapp.png" alt=""> </a>
+        <a href="https://instagram.com/dpmlcontabilidade" target="_blank"> <img src="img/instagram.png" alt=""></a>
+       
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    document.getElementById("formulario").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const telefone = document.getElementById("telefone").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      const texto = `Olá! Aqui estão os dados do formulário:%0A
+Nome: ${nome}
+Email: ${email}
+Telefone: ${telefone}
+Mensagem: ${mensagem}`;
+
+      const numeroWhatsApp = "5521972358299"; // Substitua com seu número
+
+      const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+      window.open(link, "_blank");
+    });
+  </script>
+
+<script>
+  const telefoneInput = document.getElementById('telefone');
+
+  telefoneInput.addEventListener('input', function(e) {
+    let valor = e.target.value.replace(/\D/g, ''); // Remove tudo que não for número
+
+    if (valor.length > 11) valor = valor.slice(0, 11); // Máximo 11 dígitos
+
+    if (valor.length >= 2 && valor.length <= 6) {
+      valor = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+    } else if (valor.length > 6) {
+      valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+    }
+
+    e.target.value = valor;
+  });
+</script>
+
+
+
+
+
+  <script>
+    function revelarElementos() {
+    let elementos = document.querySelectorAll(".reveal");
+    
+    elementos.forEach((elemento) => {
+        let posicao = elemento.getBoundingClientRect().top;
+        let alturaTela = window.innerHeight;
+
+        if (posicao < alturaTela - 100) {
+            elemento.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", revelarElementos);
+window.addEventListener("load", revelarElementos); // Garante que alguns itens apareçam ao carregar a página
+
+
+
+  </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const itensClicaveis = document.querySelectorAll('.servico_lista .item .item1');
+
+    itensClicaveis.forEach(itemClicavel => {
+        itemClicavel.addEventListener('click', function () {
+            const itemPai = this.parentElement; // Este é o <li> com a classe .item
+            const listaItens = itemPai.querySelector('.lista-itens');
+            const seta = this.querySelector('img');
+
+            if (listaItens) {
+                // Comportamento de Accordion: Fechar outros itens abertos
+                // Se você quiser que múltiplos possam ficar abertos, remova/comente este bloco:
+                document.querySelectorAll('.servico_lista .item .lista-itens.aberto').forEach(outroItemAberto => {
+                    if (outroItemAberto !== listaItens) {
+                        outroItemAberto.classList.remove('aberto');
+                        const outraSeta = outroItemAberto.parentElement.querySelector('.item1 img');
+                        if (outraSeta) {
+                            outraSeta.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+                // Fim do bloco opcional de fechar outros itens
+
+                // Alterna (abre/fecha) o item clicado
+                listaItens.classList.toggle('aberto');
+
+                // Gira a seta do item clicado
+                if (seta) {
+                    if (listaItens.classList.contains('aberto')) {
+                        seta.style.transform = 'rotate(90deg)';
+                    } else {
+                        seta.style.transform = 'rotate(0deg)';
+                    }
+                }
+            }
+        });
+    });
+});
+</script>
+ 
+
+
+
+
+</body>
+</html>
